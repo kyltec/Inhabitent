@@ -1,8 +1,11 @@
 <?php
 /**
- * The template for displaying all pages.
- *
+ * The template for displaying the about page on Inhabitent.
+ * 
  * @package RED_Starter_Theme
+ * 
+ * 
+ * Template Name: About Page Template
  */
 
 get_header(); ?>
@@ -19,5 +22,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

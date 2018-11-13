@@ -26,7 +26,7 @@ add_filter( 'body_class', 'red_starter_body_classes' );
 
 function inhabitent_login_logo() {
 	echo '<style type="text/css">                                                                   
-		h1 a { background-image:url('.get_stylesheet_directory_uri().'/logos/inhabitent-logo-text-dark.svg) !important; 
+		h1 a { background-image:url('.get_stylesheet_directory_uri().'/images/logos/inhabitent-logo-text-dark.svg) !important; 
 		height: 120px !important; width: 410px !important; margin-left: -40px !important; margin-bottom:0 !important; background-size: 100% !important; }                            
 	</style>';
 }
