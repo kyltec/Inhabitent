@@ -678,13 +678,17 @@ object {
   display: -ms-flexbox;
   display: flex;
   background: url("../../images/dark-wood.png");
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 300px;
-  width: 100%; }
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 ul {
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
 
 li {
   display: -webkit-box;
@@ -711,15 +715,15 @@ a.foota:active {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  margin: 50px; }
 
 .footer-cats {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: #d99054;
-  font-weight: bold;
-  display: flex; }
+  font-weight: bold; }
 
 .hours {
   display: -webkit-box;
@@ -740,7 +744,8 @@ a.foota:active {
           align-items: flex-end;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  height: 100%; }
 
 .site {
   display: -webkit-box;
@@ -752,7 +757,56 @@ a.foota:active {
           flex-direction: column;
   min-height: 100vh; }
 
+.footer-img {
+  color: white;
+  height: 50px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.contact-hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%; }
+
+.widget-area {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding-left: 15px;
+  padding-top: 15px;
+  border-left: 1px solid grey; }
+
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1.5rem; }
+
+.site-description {
+  display: none; }
+
 .site-content {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
-          flex-grow: 1; }
+          flex-grow: 1;
+  display: grid;
+  grid-template-columns: 2fr 1fr; }
+
+.content-area {
+  display: grid; }
+
+.site-main {
+  padding: 50px; }

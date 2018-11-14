@@ -5,13 +5,15 @@
 .site-footer {
   display: flex;
   background: url('../../images/dark-wood.png');
-  justify-content: space-around;
+  justify-content: space-between;
   height: 300px;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 ul {
   padding: 0;
+  margin: 0;
 }
 
 li {
@@ -37,13 +39,13 @@ a.foota:active {
 .info {
   display: flex;
   flex-direction: column;
+  margin: 50px;
 }
 
 .footer-cats {
   display: flex;
   color: #d99054;
   font-weight: bold;
-  display: flex;
 }
 
 .hours {
@@ -56,6 +58,7 @@ a.foota:active {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  height: 100%;
 }
 
 .site {
@@ -64,6 +67,18 @@ a.foota:active {
   min-height: 100vh;
 }
 
-.site-content {
-  flex-grow: 1;
+.footer-img {
+  color: white;
+  height: 50px;
+  width: auto;
+  display: flex;
+}
+
+.contact-hours {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }

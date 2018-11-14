@@ -3,3 +3,21 @@ body {
   width: 100%;
   line-height: 1.5rem;
 }
+
+.site-description {
+  display: none;
+}
+
+.site-content {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.content-area {
+  display: grid;
+}
+
+.site-main {
+  padding: 50px;
+}
