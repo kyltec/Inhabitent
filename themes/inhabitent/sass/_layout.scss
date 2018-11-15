@@ -1,7 +1,20 @@
 body {
   height: 100%;
+  line-height: 1.75rem;
+  font-size: 16px;
+  color: #404040;
+}
+
+.home-hero {
+  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../../images/home-hero.jpg');
+  height: 100vh;
   width: 100%;
-  line-height: 1.5rem;
+}
+
+.home-trees {
+  height: 100vh;
 }
 
 .site-description {
@@ -11,13 +24,8 @@ body {
 .site-content {
   flex-grow: 1;
   display: grid;
-  grid-template-columns: 2fr 1fr;
 }
 
 .content-area {
   display: grid;
-}
-
-.site-main {
-  padding: 50px;
 }

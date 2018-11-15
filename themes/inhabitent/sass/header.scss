@@ -1,0 +1,29 @@
+.nav-image {
+  height: 40px;
+  width: 40px;
+}
+
+.flex-nav-image {
+  justify-content: flex-start;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e1e1e1;
+  position: fixed;
+  background: white;
+  width: 1120px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.flex-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+.main-navigation {
+  justify-content: flex-end;
+}

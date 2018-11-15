@@ -22,7 +22,7 @@
 							</li>
 							<li><i class="fas fa-envelope"></i><a href="" class="foota">   info@inhabitent.com</a></li>
 							<li><i class="fas fa-phone" style="color:white; transform:scaleX(-1)"><a href="" class="foota"></i>   778-456-7891</a></li>
-							<li><i class="fab fa-facebook-square"></i>"   "<i class="fab fa-twitter-square"></i>"   "<i class="fab fa-google-plus-g"></i></li>
+							<li><i class="fab fa-facebook-square"></i><span style="color:black">te</span><i class="fab fa-twitter-square"></i><span style="color:black">te</span><i class="fab fa-google-plus-g"></i></li>
 						</ul>
 					</div>
 					<div class="hours">
