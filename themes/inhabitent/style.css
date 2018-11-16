@@ -889,7 +889,9 @@ body {
   width: 100%; }
 
 .main-navigation ul li a {
-  padding: 10px; }
+  padding: 10px;
+  font-family: 'novecento';
+  font-size: 1.13rem; }
 
 .home-hero {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/home-hero.jpg"), no-repeat, center;
@@ -992,4 +994,37 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1.5rem 15rem; }
+  margin: 1.5rem 20rem; }
+
+.about-title {
+  font-family: 'novecento-bold'; }
+
+.journal-post {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px; }
+
+.journal-title {
+  position: absolute;
+  top: 10%;
+  max-width: 600px;
+  background: #248a83;
+  padding: 10px 100px 10px 0; }
+  .journal-title a {
+    color: white;
+    text-decoration: none;
+    font-family: 'novecento-bold';
+    font-size: 2.5rem; }
+    .journal-title a:hover {
+      color: #f0e4d1; }
+
+.journal-header {
+  position: relative; }
+
+.journal-meta {
+  position: absolute;
+  bottom: 7px;
+  padding: 5px 10px 5px 5px;
+  left: 273px;
+  color: white;
+  background: #248a83; }
