@@ -72,7 +72,7 @@ function inhabitent_dynamic_css(){
 			height: 100vh;
 			display: flex;
 			justify-content: center;
-			align-items: cneter;
+			align-items: center;
 			background-size: cover;
 		}";
 	}
@@ -84,4 +84,4 @@ function inhabitent_dynamic_css(){
 
 
 
-add_action('wp_enqueue_scripts', inhabitent_dynamic_css);
+add_action('wp_enqueue_scripts', 'inhabitent_dynamic_css');

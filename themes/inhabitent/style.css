@@ -225,6 +225,48 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'novecento-bold';
+  src: url("../../fonts/novecento-bold.eot");
+  src: url("../../fonts/novecento-bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecento-bold.woff2") format("woff2"), url("../../fonts/novecento-bold.woff") format("woff"), url("../../fonts/novecento-bold.ttf") format("truetype"), url("../../fonts/novecento-bold.svg#.") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'novecento';
+  src: url("novecento.eot");
+  src: url("../../fonts/novecento.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecento.woff2") format("woff2"), url("novecento.woff") format("woff"), url("../../fonts/novecento.ttf") format("truetype"), url("../../fonts/novecento.svg#.") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'merriweather-light-italic';
+  src: url("../../fonts/Merriweather-LightItalic.eot");
+  src: url("../../fonts/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-LightItalic.woff2") format("woff2"), url("../../fonts/Merriweather-LightItalic.woff") format("woff"), url("../../fonts/Merriweather-LightItalic.ttf") format("truetype"), url("../../fonts/Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'merriweather-light';
+  src: url("../../fonts/Merriweather-Light.eot");
+  src: url("../../fonts/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-Light.woff2") format("woff2"), url("../../fonts/Merriweather-Light.woff") format("woff"), url("../../fonts/Merriweather-Light.ttf") format("truetype"), url("../../fonts/Merriweather-Light.svg#Merriweather-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'merriweather-bold-italic';
+  src: url("../../fonts/Merriweather-BoldItalic.eot");
+  src: url("../../fonts/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("../../fonts/Merriweather-BoldItalic.woff") format("woff"), url("../../fonts/Merriweather-BoldItalic.ttf") format("truetype"), url("../../fonts/Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'merriweather-bold';
+  src: url("../../fonts/Merriweather-Bold.eot");
+  src: url("../../fonts/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-Bold.woff2") format("woff2"), url("../../fonts/Merriweather-Bold.woff") format("woff"), url("../../fonts/Merriweather-Bold.ttf") format("truetype"), url("../../fonts/Merriweather-Bold.svg#Merriweather-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -574,9 +616,6 @@ a {
 .sticky {
   display: block; }
 
-.hentry {
-  margin: 0 0 1.5rem; }
-
 .updated:not(.published) {
   display: none; }
 
@@ -792,7 +831,8 @@ body {
   height: 100%;
   line-height: 1.75rem;
   font-size: 16px;
-  color: #404040; }
+  color: #404040;
+  font-family: 'merriweather-light'; }
 
 .site-description {
   display: none; }
@@ -815,23 +855,6 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start; }
 
-.site-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom: 1px solid #e1e1e1;
-  position: fixed;
-  background: white;
-  width: 1120px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 auto;
-  width: 100%; }
-
 .flex-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -847,12 +870,126 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end; }
 
-.home-hero {
-  background-size: cover;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/home-hero.jpg"), no-repeat, center;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/home-hero.jpg"), no-repeat, center;
-  height: 100vh;
+.flexed-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #e1e1e1;
+  position: fixed;
+  z-index: 10;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6)));
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+  width: 1120px;
+  margin: 0 auto;
   width: 100%; }
 
+.main-navigation ul li a {
+  padding: 10px; }
+
+.home-hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/home-hero.jpg"), no-repeat, center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/home-hero.jpg"), no-repeat, center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative; }
+
 .home-trees {
-  height: 100vh; }
+  position: absolute;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.front-page-content {
+  margin: 0; }
+
+.front-page-image {
+  height: auto;
+  width: 70px; }
+
+.front-page-shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.front-page-journal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.front-page-journal-entry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.front-page-titles {
+  margin: 10%;
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'novecento'; }
+
+.frontpage-term {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 5px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  border-left: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+  padding: 10px;
+  width: 250px;
+  height: auto; }
+  .frontpage-term:hover {
+    border-top: 5px solid #d99054;
+    border-bottom: 1px solid #d99054;
+    border-left: 1px solid #d99054;
+    border-right: 1px solid #d99054; }
+
+.home-header h2 {
+  display: none; }
+
+.frontpage-term a {
+  padding: 0.75rem 1.5rem;
+  color: white;
+  background: #248a83; }
+
+.about-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.5rem 15rem; }

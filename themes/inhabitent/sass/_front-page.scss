@@ -1,11 +1,78 @@
 .home-hero {
-  background-size: cover;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url('../../images/home-hero.jpg'), no-repeat, center;
+  background-size: cover;
   height: 100vh;
   width: 100%;
+  position: relative;
 }
 
 .home-trees {
-  height: 100vh;
+  position: absolute;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.front-page-content {
+  margin: 0;
+}
+
+.front-page-image {
+  height: auto;
+  width: 70px;
+}
+
+.front-page-shop {
+  display: flex;
+  justify-content: space-around;
+}
+
+.front-page-journal {
+  display: flex;
+  justify-content: space-around;
+}
+
+.front-page-journal-entry {
+  display: flex;
+  flex-direction: column;
+}
+
+.front-page-titles {
+  margin: 10%;
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'novecento';
+}
+
+.frontpage-term {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 5px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  border-left: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+  padding: 10px;
+  width: 250px;
+  height: auto;
+
+  &:hover {
+    border-top: 5px solid #d99054;
+    border-bottom: 1px solid #d99054;
+    border-left: 1px solid #d99054;
+    border-right: 1px solid #d99054;
+  }
+}
+
+.home-header h2 {
+  display: none;
+}
+
+.frontpage-term a {
+  padding: 0.75rem 1.5rem;
+  color: white;
+  background: #248a83;
 }

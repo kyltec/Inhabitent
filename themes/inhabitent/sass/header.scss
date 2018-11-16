@@ -7,18 +7,6 @@
   justify-content: flex-start;
 }
 
-.site-header {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #e1e1e1;
-  position: fixed;
-  background: white;
-  width: 1120px;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 100%;
-}
-
 .flex-nav {
   display: flex;
   justify-content: flex-end;
@@ -27,4 +15,24 @@
 
 .main-navigation {
   justify-content: flex-end;
+}
+
+.flexed-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e1e1e1;
+  position: fixed;
+  z-index: 10;
+  justify-content: space-around;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.6)
+  );
+  width: 1120px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.main-navigation ul li a {
+  padding: 10px;
 }

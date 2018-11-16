@@ -22,7 +22,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<header class="entry-header home-header">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
@@ -36,7 +36,7 @@ get_header(); ?>
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content front-page-content">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
@@ -53,12 +53,13 @@ get_header(); ?>
 
 
 		<section class="home-hero">
-		<img src="<?php echo get_template_directory_uri(); ?>/images/logos/imhabitent-logo-full.svg" alt="" class="home-trees">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" alt="" class="home-trees">
 		</section>
 
-
+	<p class="front-page-titles">Shop Stuff</p>
 		<section class='front-page-shop'>
-		<?php
+		
+			<?php
 			// TODO get terms for our products and do some clever stuff with images
 
 			$terms = get_terms(array(
@@ -69,7 +70,7 @@ get_header(); ?>
 
 			foreach($terms as $term): ?>
 				<div class='frontpage-term'>
-					<img src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term->slug . '.svg'; ?>" 
+					<img class="front-page-image" src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term->slug . '.svg'; ?>" 
 								alt="<?php echo $term->name; ?>" />
 
 					<p><?php echo $term -> description; ?></p>	
@@ -87,17 +88,18 @@ get_header(); ?>
 		/*
 		* Get the blog journal entries
 		*/
-  	 		$args = array( 'post_type' => 'post', 'order', 'posts_per_page' => 3 );
+  	 		$args = array( 'post_type' => 'post', 'order' => 'date', 'posts_per_page' => 3 );
   	 		$journal_posts = get_posts( $args ); // returns an array of posts
 		?>
-
-		<section class='fornt-page-journal'>
-		<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
+	<p class="front-page-titles">Inhabitent Journal</p>
+		<section class='front-page-journal'>
+		
+			<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
 			<article class='front-page-journal-entry'>
 		   		<?php 
 					the_post_thumbnail('medium');
 				?>
-				<span>entry-meta
+				<span>
 					<?php
 						red_starter_posted_on();
 						echo ' / ';
