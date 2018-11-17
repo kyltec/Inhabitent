@@ -127,7 +127,7 @@ function inhabitent_excerpt_more( $more ){
 	  ){
 	  $query->set( 'orderby', 'title' );
 	  $query->set( 'order', 'ASC' );
-	  $query->set( 'post_per_page', 1);
+	  $query->set( 'post_per_page', 16);
   }
 }
 

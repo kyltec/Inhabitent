@@ -22,12 +22,11 @@ get_header(); ?>
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
-		</div><!-- .entry-meta -->
+			<?php echo '$' . CFS()->get( 'price' ); ?>
+
 	</header><!-- .entry-header -->
 
-	<?php echo CFS()->get( 'price' ); ?>
+
 
 	<div class="entry-content">
 		<?php the_content(); ?>
@@ -58,5 +57,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
