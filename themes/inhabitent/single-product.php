@@ -8,28 +8,32 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main individual-product-flex" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+		<header class="entry-header individual-product-header">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
-
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-			<?php echo '$' . CFS()->get( 'price' ); ?>
 
 	</header><!-- .entry-header -->
 
 
 
-	<div class="entry-content">
+	<div class="entry-content individual-description">
+	<?php the_title( '<h1 class="entry-title individual-title">', '</h1>' ); ?>
+
+<?php echo '$' . CFS()->get( 'price' ); ?>
 		<?php the_content(); ?>
+		<div class='social-media-button'>
+			<button class='black-btn'><i class="fab fa-facebook-f"></i>  Like</button>
+			<button class='black-btn'><i class="fab fa-twitter"></i>  Tweet</button>
+			<button class='black-btn'><i class="fab fa-pinterest"></i>  Pin</button>
+		</div>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),

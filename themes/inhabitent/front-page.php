@@ -106,9 +106,11 @@ get_header(); ?>
 						comments_number( '0 Comments', '1 Comment', '% Comments' );
 					?>
 				</span>
-				<a href="<?php echo get_the_permalink();?>"><?php the_title();
-		    	?></a>
-				<a class="read-more" href="<?php echo get_the_permalink();?>">Read More</a>
+				<div class ='journal-info'>
+					<a href="<?php echo get_the_permalink();?>"><?php the_title();?></a>
+				</div>
+					<button class='fp-btn'><a href="<?php echo get_the_permalink();?>">Read More</a></button>
+				
 			</article>
 		<?php endforeach; wp_reset_postdata(); ?>
 		</section>

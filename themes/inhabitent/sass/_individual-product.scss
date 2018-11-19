@@ -1,0 +1,55 @@
+.nav-links {
+  display: none;
+}
+
+.individual-product-flex {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.individual-title {
+  font-family: 'novecento-bold';
+  color: #d99054;
+}
+
+.individual-description {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: auto;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-left: 50px;
+}
+
+article.product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.individual-product-header {
+  max-width: 50%;
+}
+
+.socail-medial-button {
+  margin: 1.5rem;
+}
+
+.black-btn {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  font-size: 0.9rem;
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  &:hover {
+    background: #248a83;
+    box-shadow: none;
+    color: white;
+  }
+}

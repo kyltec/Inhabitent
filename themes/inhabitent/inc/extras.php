@@ -90,7 +90,7 @@ add_action('wp_enqueue_scripts', 'inhabitent_dynamic_css');
 
 function inhabitent_excerpt_more( $more ){
 	global $post;
-	return '<a class="read_more" href="' . get_permalink($post->ID) . '">Read More</a> ';
+	return '<p><a class="read_more" href="' . get_permalink($post->ID) . '">Read More</a></p> ';
  }
 
 
@@ -106,7 +106,7 @@ function inhabitent_excerpt_more( $more ){
 	 if (is_post_type_archive('product') ){
 		 $title = 'Shop Stuff';
 	 }
-	 elseif(is_tax('product-type') ){
+	 elseif(is_tax('product_type') ){
 		 $title = sprintf('%1$s', single_term_title('', false) );
 	 }
 	 return $title;
