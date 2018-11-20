@@ -2,20 +2,16 @@
 
 A WordPress theme for Inhabitent project, forked from Underscores.
 
-## Installation
+## Built With
 
-### 1. Download me (don't clone me!)
+CSS - used to style the theme and pages
 
-Then add me to your `wp-content` directory.
+Word Press and PHP - used to display content on the front end
 
-### 2. Rename the `redstarter-master` directory
+JavaScript - used for small animations
 
-Make sure that the theme directory name is project appropriate!
+Transfonter - used to get fonts for website
 
-### 3. Install the dev dependencies
+**Author**
 
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+- Kyle Tecson
