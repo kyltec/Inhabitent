@@ -1,8 +1,8 @@
 <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-			<span class="icon-search" aria-hidden="true">
+			<span class="icon-search part-404" aria-hidden="true">
 				<i class="fa fa-search"></i>
 			</span>
-		<button class="search-submit">
+		<button class="search-submit part-404">
 			<span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span>
 		</button>
 		<label>

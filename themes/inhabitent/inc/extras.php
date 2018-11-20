@@ -90,7 +90,7 @@ add_action('wp_enqueue_scripts', 'inhabitent_dynamic_css');
 
 function inhabitent_excerpt_more( $more ){
 	global $post;
-	return '<p><a class="read_more" href="' . get_permalink($post->ID) . '">Read More</a></p> ';
+	return '<p><a class="read-more" href="' . get_permalink($post->ID) . '">Read More</a></p> ';
  }
 
 

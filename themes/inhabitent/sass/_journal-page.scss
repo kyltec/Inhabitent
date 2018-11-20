@@ -14,6 +14,7 @@
     color: white;
     text-decoration: none;
     font-family: 'novecento-bold';
+    text-transform: uppercase;
     font-size: 2.5rem;
     &:hover {
       color: #f0e4d1;
@@ -32,4 +33,16 @@
   left: 273px;
   color: white;
   background: #248a83;
+}
+
+.read-more {
+  padding: 0.75rem 1.5rem;
+  color: black;
+  background: white;
+  border: 1px solid black;
+  text-decoration: none;
+  &:hover {
+    background: #248a83;
+    color: white;
+  }
 }

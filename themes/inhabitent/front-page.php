@@ -99,6 +99,7 @@ get_header(); ?>
 		   		<?php 
 					the_post_thumbnail('medium');
 				?>
+				<div class="fp-journal-info">
 				<span>
 					<?php
 						red_starter_posted_on();
@@ -110,7 +111,7 @@ get_header(); ?>
 					<a href="<?php echo get_the_permalink();?>"><?php the_title();?></a>
 				</div>
 					<button class='fp-btn'><a href="<?php echo get_the_permalink();?>">Read More</a></button>
-				
+				</div>
 			</article>
 		<?php endforeach; wp_reset_postdata(); ?>
 		</section>

@@ -46,6 +46,7 @@ a.foota:active {
   display: flex;
   color: #d99054;
   font-weight: bold;
+  font-family: 'novecento-bold';
 }
 
 .hours {
@@ -59,6 +60,8 @@ a.foota:active {
   align-items: flex-end;
   justify-content: center;
   height: 100%;
+  font-family: 'novecento';
+  text-transform: uppercase;
 }
 
 .site {

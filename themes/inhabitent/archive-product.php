@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<header class="page-header shop-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_title( '<h1 class="page-title shop-title">', '</h1>' );
 				?>
 
 				<div class='sub-menu'>
