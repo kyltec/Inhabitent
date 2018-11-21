@@ -7,7 +7,7 @@
 !README.md
 # Ignore everything in "plugins" except certain plugins. #
 plugins/*
-!plugins/inhabitent-functionality/
+!plugins/inhabitent_functionality/
 !plugins/inhabitent_business_hours/
 # Ignore everything in "themes" except the active theme. #
 themes/*
