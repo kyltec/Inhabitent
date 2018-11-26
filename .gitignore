@@ -5,6 +5,7 @@
 !themes/
 !uploads/
 !README.md
+!screenshots/
 # Ignore everything in "plugins" except certain plugins. #
 plugins/*
 !plugins/inhabitent_functionality/
