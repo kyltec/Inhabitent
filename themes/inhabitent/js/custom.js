@@ -6,11 +6,11 @@
 
     $icon.on('click', function(event) {
       event.preventDefault();
-      $field.toggle().focus();
+      $field.animate({ width: 'toggle' }).focus();
     });
 
     $field.blur(function() {
-      $field.hide();
+      $field.animate({ width: 'toggle' });
     });
   });
 })(jQuery);

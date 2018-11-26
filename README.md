@@ -1,24 +1,10 @@
 # Inhabitent
 
-A WordPress theme for Inhabitent project, forked from Underscores.
+A WordPress theme for Inhabitent project.
 
-## Installation
+## Screenshot
 
-### 1. Download me (don't clone me!)
-
-Then add me to your `wp-content` directory.
-
-### 2. Rename the `redstarter-master` directory
-
-Make sure that the theme directory name is project appropriate!
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+<img src="./screenshots/inhabitent-screenshot.png" width="1200px" height="800px">
 
 ## Built With
 
@@ -32,6 +18,13 @@ Transfronter - used to convert fonts
 
 Google Maps API - ussed to get google maps
 
+Wordpress
+
 ## Author
 
 - Kyle Tecson
+
+## Things I Learned
+
+How to style a wordpress theme using php and the wordpress heirarchy.
+How to create a custom field type and custom post type.
