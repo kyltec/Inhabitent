@@ -4,7 +4,7 @@ A WordPress theme for Inhabitent project.
 
 ## Screenshot
 
-<img src="./screenshots/inhabitent-screenshot.png" width="1200px" height="800px">
+<img src="./screenshots/inhabitent-screenshot.png" width="800px" height="500px">
 
 ## Built With
 
