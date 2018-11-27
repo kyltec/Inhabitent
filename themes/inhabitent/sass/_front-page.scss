@@ -57,11 +57,14 @@
 }
 
 .front-page-titles {
-  margin: 10%;
+  margin: 5%;
   font-size: 3rem;
   text-align: center;
   font-family: 'novecento';
   text-transform: uppercase;
+  &:nth-of-type(1) {
+    margin-top: 7%;
+  }
 }
 
 .frontpage-term {
@@ -132,5 +135,104 @@
 
   a {
     color: black;
+  }
+}
+
+//Adventure Section
+
+.adventure-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  p {
+    position: absolute;
+    color: #fff;
+    z-index: 8;
+    font-size: 2.6rem;
+    max-width: 400px;
+    line-height: 2rem;
+    padding-left: 10px;
+  }
+}
+
+.adventure-pic-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../../images/adventure-photos/canoe-girl.jpg') no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 400px;
+  position: relative;
+  background-position: center;
+}
+
+.adventure-pic-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../../images/adventure-photos/beach-bonfire.jpg') no-repeat;
+  background-size: cover;
+  height: 240px;
+  width: 400px;
+  position: relative;
+  background-position: center;
+}
+
+.adventure-pic-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../../images/adventure-photos/mountain-hikers.jpg') no-repeat;
+  background-size: cover;
+  height: 240px;
+  width: 190px;
+  position: relative;
+  background-position: center;
+}
+
+.adventure-pic-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../../images/adventure-photos/night-sky.jpg') no-repeat;
+  background-size: cover;
+  height: 240px;
+  width: 190px;
+  position: relative;
+  background-position: center;
+}
+
+.adventure-half-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  p {
+    font-size: 2.3rem;
+  }
+}
+
+.adventure-quart-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  p {
+    max-width: 190px;
+    font-size: 1.5rem;
+  }
+}
+
+.adventure-ind {
+  margin-right: 20px;
+}
+
+.more-adventure {
+  padding-bottom: 30px;
+  margin-left: 310px;
+  text-decoration: none;
+  color: #fff;
+  background: #248a83;
+  font-family: 'novecento';
+  padding: 10px 30px;
+  margin-bottom: 30px;
+  &:hover {
+    color: #fff;
+    background: #16615c;
+  }
+  &:visited {
+    color: #fff;
   }
 }

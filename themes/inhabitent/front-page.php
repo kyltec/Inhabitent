@@ -116,6 +116,38 @@ get_header(); ?>
 		<?php endforeach; wp_reset_postdata(); ?>
 		</section>
 
+
+		<p class="front-page-titles">Latest Adventures</p>
+		<section class="adventure-section">
+			<div class="adventure-flex">
+				<div>
+					<p>Getting Back to Nature in a Canoe</p>
+					<div class="adventure-pic-1"></div>
+				</div>
+				<div class="adventure-half-container">
+					<div>
+						<p>A Night With Friends at a Beach</p>
+						<div class="adventure-pic-2"></div>
+					</div>
+					<div class="adventure-quart-container">
+						<div class="adventure-ind">
+							<p>Taking in the View at Big Mountain</p>
+							<div class="adventure-pic-3" ></div>
+						</div>
+
+						<div>
+							<p>Star-Gazing at the Night Sky</p>
+							<div class="adventure-pic-4"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+				<a class="more-adventure" href="#">More Adventure<a>
+			
+		</section>
+		
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
