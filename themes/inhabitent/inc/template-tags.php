@@ -56,17 +56,21 @@
   * Prints HTML with meta information for the categories and tags.
   */
  function red_starter_entry_footer() {
- 	// Hide category and tag text for pages.
+	 // Hide category and tag text for pages.
+	 
  	if ( 'post' === get_post_type() ) {
+		
  		/* translators: used between list items, there is a space after the comma */
  		$categories_list = get_the_category_list( esc_html( ', ' ) );
  		if ( $categories_list && red_starter_categorized_blog() ) {
+			
  			printf( '<span class="cat-links">' . esc_html( 'Posted in &rarr; %1$s' ) . '</span>', $categories_list ); // WPCS: XSS OK.
  		}
 
  		/* translators: used between list items, there is a space after the comma */
  		$tags_list = get_the_tag_list( '', esc_html( ', ' ) );
  		if ( $tags_list ) {
+			 
  			printf( '<span class="tags-links">' . esc_html( 'Tagged &rarr; %1$s' ) . '</span>', $tags_list ); // WPCS: XSS OK.
  		}
  	}

@@ -30,6 +30,20 @@ get_header(); ?>
 
 	<div class="entry-content">
 		<?php the_content();?>
+		<?php
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+				'after'  => '</div>',
+			) );
+		?>
+		<footer class="entry-footer">
+			<?php red_starter_entry_footer(); ?>
+			<div class='social-media-button'>
+			<button class='black-btn'><i class="fab fa-facebook-f"></i>  Like</button>
+			<button class='black-btn'><i class="fab fa-twitter"></i>  Tweet</button>
+			<button class='black-btn'><i class="fab fa-pinterest"></i>  Pin</button>
+		</div>
+		</footer><!-- .entry-footer -->
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
 

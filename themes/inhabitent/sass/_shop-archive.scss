@@ -48,10 +48,11 @@
 }
 
 .shop-header {
-  top: 50px;
-  padding: 50px;
+  padding-top: 50px;
+  margin: 50px 0;
   text-align: center;
   font-family: 'novecento-bold';
+  border-bottom: 1px dashed #c8c8c8;
 }
 
 .sub-menu {
@@ -61,7 +62,6 @@
   align-items: center;
   text-transform: uppercase;
   font-family: 'novecento';
-  border-bottom: 1px dashed #c8c8c8;
 }
 
 .shop-menu {

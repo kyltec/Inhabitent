@@ -12,7 +12,6 @@
 }
 
 iframe.google-map {
-  padding-left: 50px;
   width: 900px;
   height: 300px;
 }
@@ -27,8 +26,20 @@ input[type='submit'].wpcf7-submit {
   width: 120px;
   height: 40px;
   font-size: 0.9rem;
+  text-transform: uppercase;
   &:hover {
     box-shadow: none;
     background: #216964;
+  }
+}
+
+.find-us-main {
+  margin: 0px 110px;
+}
+
+.wpcf7-form {
+  label {
+    font-family: 'novecento';
+    text-transform: uppercase;
   }
 }

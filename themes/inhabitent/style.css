@@ -833,6 +833,10 @@ a.foota:active {
 .day-of-week {
   font-family: 'merriweather-bold'; }
 
+.widget-title {
+  text-transform: uppercase;
+  font-family: 'novecento-bold'; }
+
 body {
   height: 100%;
   line-height: 1.75rem;
@@ -851,6 +855,9 @@ body {
 
 .content-area {
   display: grid; }
+
+.social-media-button {
+  margin-top: 20px; }
 
 .nav-image {
   height: 40px;
@@ -1212,6 +1219,13 @@ body {
     background: #248a83;
     color: white; }
 
+.entry-footer span {
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-family: 'novecento'; }
+  .entry-footer span a {
+    text-decoration: none; }
+
 .flexed-header .search-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1291,10 +1305,11 @@ body {
   font-family: 'merriweather-light'; }
 
 .shop-header {
-  top: 50px;
-  padding: 50px;
+  padding-top: 50px;
+  margin: 50px 0;
   text-align: center;
-  font-family: 'novecento-bold'; }
+  font-family: 'novecento-bold';
+  border-bottom: 1px dashed #c8c8c8; }
 
 .sub-menu {
   display: -webkit-box;
@@ -1311,8 +1326,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase;
-  font-family: 'novecento';
-  border-bottom: 1px dashed #c8c8c8; }
+  font-family: 'novecento'; }
 
 .shop-menu {
   padding: 10px;
@@ -1408,7 +1422,6 @@ body {
   padding-top: 50px; }
 
 iframe.google-map {
-  padding-left: 50px;
   width: 900px;
   height: 300px; }
 
@@ -1422,11 +1435,19 @@ input[type='submit'].wpcf7-submit {
           box-shadow: none;
   width: 120px;
   height: 40px;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  text-transform: uppercase; }
   input[type='submit'].wpcf7-submit:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
     background: #216964; }
+
+.find-us-main {
+  margin: 0px 110px; }
+
+.wpcf7-form label {
+  font-family: 'novecento';
+  text-transform: uppercase; }
 
 .error-404 {
   margin-top: 50px;
@@ -1469,3 +1490,90 @@ input[type='submit'].wpcf7-submit {
 
 .search-post {
   font-size: 2.3rem; }
+
+.comment-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.comment-content {
+  color: #000000; }
+
+.comment-respond .comment-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%; }
+  .comment-respond .comment-form input[type='submit'] {
+    background-color: transparent;
+    color: white;
+    border-radius: 0;
+    background: #248a83;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 120px;
+    height: 40px;
+    font-size: 0.9rem;
+    text-transform: uppercase; }
+    .comment-respond .comment-form input[type='submit']:hover {
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      background: #216964; }
+
+.comment-respond label {
+  font-family: 'novecento';
+  text-transform: uppercase; }
+
+.comment-reply-title,
+.comments-title {
+  text-transform: uppercase;
+  font-family: 'novecento-bold';
+  width: 100%; }
+
+.comment-form-comment {
+  width: 100%; }
+
+.comment-form-author {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 49%;
+  margin-right: 1%; }
+  .comment-form-author input {
+    width: 100%; }
+
+.comment-form-email {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 50%; }
+  .comment-form-email input {
+    width: 100%; }
+
+.comment-form-url {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%; }
+  .comment-form-url input {
+    width: 100%; }
+
+.comment-list {
+  margin: 0;
+  padding: 0; }
+
+.comment-author-avatar {
+  padding-right: 30px; }
+  .comment-author-avatar img {
+    border-radius: 30px; }
