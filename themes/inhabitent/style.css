@@ -1171,6 +1171,32 @@ body {
   .more-adventure:visited {
     color: #fff; }
 
+.adventure-btn {
+  position: absolute;
+  z-index: 8;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 0.9rem;
+  border-radius: 0;
+  width: 150px;
+  text-transform: uppercase;
+  margin-left: 10px;
+  margin-top: 135px; }
+  .adventure-btn a {
+    color: #fff;
+    text-decoration: none; }
+  .adventure-btn:hover {
+    color: white;
+    background: #248a83;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none; }
+    .adventure-btn:hover a {
+      color: white; }
+
 .about-page {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -123,21 +123,26 @@ get_header(); ?>
 			<div class="adventure-flex">
 				<div>
 					<p>Getting Back to Nature in a Canoe</p>
+					<button class='adventure-btn'><a href="<?php echo get_the_permalink();?>">Read More</a></button>
 					<div class="adventure-pic-1"></div>
+
 				</div>
 				<div class="adventure-half-container">
 					<div>
 						<p>A Night With Friends at a Beach</p>
+						<button class='adventure-btn'><a href="<?php echo get_the_permalink();?>">Read More</a></button>
 						<div class="adventure-pic-2"></div>
 					</div>
 					<div class="adventure-quart-container">
 						<div class="adventure-ind">
 							<p>Taking in the View at Big Mountain</p>
+							<button class='adventure-btn'><a href="<?php echo get_the_permalink();?>">Read More</a></button>
 							<div class="adventure-pic-3" ></div>
 						</div>
 
 						<div>
 							<p>Star-Gazing at the Night Sky</p>
+							<button class='adventure-btn'><a href="<?php echo get_the_permalink();?>">Read More</a></button>
 							<div class="adventure-pic-4"></div>
 						</div>
 					</div>
