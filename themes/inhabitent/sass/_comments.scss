@@ -1,5 +1,8 @@
 .comment-body {
   display: flex;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 35px;
+  padding-top: 15px;
 }
 
 .comment-content {
@@ -81,4 +84,12 @@
   img {
     border-radius: 30px;
   }
+}
+
+.comment-author {
+  font-family: 'merriweather-bold';
+}
+
+cite.fn {
+  font-style: normal;
 }

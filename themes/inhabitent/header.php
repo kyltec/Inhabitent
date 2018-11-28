@@ -19,27 +19,51 @@
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
-
+			
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
 
+				<?php if(is_page_template('about.php') || is_front_page()): ?>
 
-				<div class="flexed-header">
-					<div class="flex-nav-image"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" alt="" class="nav-image"></a></div>
+					<div class="flexed-header flexed-header-home-ab">
+						<div>
+							<div class="alt-home-img flex-nav-image-home-ab"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg" alt="" class="nav-image-white"></a></div>
+							<div class="flex-nav-image"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" alt="" class="nav-image"></a></div>
+						</div>
+						<div class="flex-nav flex-nav-home-ab">
+							<nav id="site-navigation" class="main-navigation" role="navigation">
+								<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
+								<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+							</nav><!-- #site-navigation -->
 
-					<div class="flex-nav">
-						<nav id="site-navigation" class="main-navigation" role="navigation">
-							<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
-							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-						</nav><!-- #site-navigation -->
-
-						<?php get_search_form()?>
+							<?php get_search_form()?>
+						</div>
+					
 					</div>
-				
-				</div>
+
+				<?php else: ?>
+
+					<div class="flexed-header">
+						<div class="flex-nav-image"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" alt="" class="nav-image"></a></div>
+						<div class="flex-nav">
+							<nav id="site-navigation" class="main-navigation" role="navigation">
+								<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
+								<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+							</nav><!-- #site-navigation -->
+
+							<?php get_search_form()?>
+						</div>
+					
+					</div>
+
+				<?php endif; ?>
+
+			
+
+
 
 
 			</header><!-- #masthead -->

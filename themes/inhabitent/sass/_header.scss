@@ -40,3 +40,32 @@
   font-family: 'novecento';
   font-size: 1.13rem;
 }
+
+// Home / About Header
+
+.nav-image-white {
+  height: 40px;
+  width: 40px;
+}
+
+.flexed-header-home-ab {
+  border-bottom: none;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  .nav-image-white {
+    display: block;
+  }
+  .nav-image {
+    display: none;
+  }
+}
+
+.flex-nav-home-ab {
+  a {
+    color: #ffff;
+  }
+}
+
+.flex-nav-image-home-ab {
+  justify-content: flex-start;
+  margin-left: 200px;
+}

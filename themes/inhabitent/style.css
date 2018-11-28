@@ -909,6 +909,28 @@ body {
   font-family: 'novecento';
   font-size: 1.13rem; }
 
+.nav-image-white {
+  height: 40px;
+  width: 40px; }
+
+.flexed-header-home-ab {
+  border-bottom: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)); }
+  .flexed-header-home-ab .nav-image-white {
+    display: block; }
+  .flexed-header-home-ab .nav-image {
+    display: none; }
+
+.flex-nav-home-ab a {
+  color: #ffff; }
+
+.flex-nav-image-home-ab {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 200px; }
+
 .home-hero {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/home-hero.jpg"), no-repeat, center;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/home-hero.jpg"), no-repeat, center;
@@ -1252,6 +1274,9 @@ body {
   color: #f0e4d1;
   background: rgba(255, 255, 255, 0.6); }
 
+.flexed-header-home-ab .fa-search {
+  color: #ffffff; }
+
 .shop-archive {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1494,7 +1519,10 @@ input[type='submit'].wpcf7-submit {
 .comment-body {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 35px;
+  padding-top: 15px; }
 
 .comment-content {
   color: #000000; }
@@ -1577,3 +1605,9 @@ input[type='submit'].wpcf7-submit {
   padding-right: 30px; }
   .comment-author-avatar img {
     border-radius: 30px; }
+
+.comment-author {
+  font-family: 'merriweather-bold'; }
+
+cite.fn {
+  font-style: normal; }
