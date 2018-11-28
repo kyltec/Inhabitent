@@ -1073,6 +1073,9 @@ body {
   .fp-btn a {
     color: black; }
 
+.adventure-section {
+  padding-bottom: 30px; }
+
 .adventure-flex {
   display: -webkit-box;
   display: -ms-flexbox;
