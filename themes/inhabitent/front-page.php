@@ -57,11 +57,10 @@ get_header(); ?>
 		<img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" alt="" class="home-trees">
 		</section>
 
-	<p class="front-page-titles">Shop Stuff</p>
+	<h3 class="front-page-titles">Shop Stuff</h3>
 		<section class='front-page-shop'>
 		
 			<?php
-			// TODO get terms for our products and do some clever stuff with images
 
 			$terms = get_terms(array(
 				'taxonomy' => 'product_type',
@@ -92,7 +91,7 @@ get_header(); ?>
   	 		$args = array( 'post_type' => 'post', 'order' => 'date', 'posts_per_page' => 3 );
   	 		$journal_posts = get_posts( $args ); // returns an array of posts
 		?>
-	<p class="front-page-titles">Inhabitent Journal</p>
+	<h3 class="front-page-titles">Inhabitent Journal</h3>
 		<section class='front-page-journal'>
 		
 			<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
@@ -118,7 +117,7 @@ get_header(); ?>
 		</section>
 
 
-		<p class="front-page-titles">Latest Adventures</p>
+		<h3 class="front-page-titles">Latest Adventures</h3>
 		<section class="adventure-section">
 			<div class="adventure-flex">
 				<div>

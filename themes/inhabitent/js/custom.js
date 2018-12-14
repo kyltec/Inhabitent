@@ -3,7 +3,6 @@
     // code goes here
     const $icon = $('.icon-search');
     const $field = $('.search-field');
-    const bannerHome = $('.home-hero').height();
     const bannerAbout = 850;
 
     $icon.on('click', function(event) {
@@ -12,7 +11,10 @@
     });
 
     $field.blur(function() {
-      $field.animate({ width: 'toggle' });
+      if ($field.val() == '') {
+        console.log($field.val());
+        $field.animate({ width: 'toggle' });
+      }
     });
 
     if (

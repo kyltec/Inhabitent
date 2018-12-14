@@ -992,7 +992,7 @@ body {
   margin-bottom: 30px; }
 
 .front-page-titles {
-  margin: 5%;
+  margin: 70px;
   font-size: 3rem;
   text-align: center;
   font-family: 'novecento';
@@ -1100,7 +1100,7 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/canoe-girl.jpg") no-repeat;
   background-size: cover;
   height: 500px;
-  width: 400px;
+  width: 600px;
   position: relative;
   background-position: center; }
 
@@ -1109,7 +1109,7 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/beach-bonfire.jpg") no-repeat;
   background-size: cover;
   height: 240px;
-  width: 400px;
+  width: 600px;
   position: relative;
   background-position: center; }
 
@@ -1118,7 +1118,7 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/mountain-hikers.jpg") no-repeat;
   background-size: cover;
   height: 240px;
-  width: 190px;
+  width: 290px;
   position: relative;
   background-position: center; }
 
@@ -1127,7 +1127,7 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/night-sky.jpg") no-repeat;
   background-size: cover;
   height: 240px;
-  width: 190px;
+  width: 290px;
   position: relative;
   background-position: center; }
 
