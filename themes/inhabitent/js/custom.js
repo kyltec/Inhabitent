@@ -12,7 +12,6 @@
 
     $field.blur(function() {
       if ($field.val() == '') {
-        console.log($field.val());
         $field.animate({ width: 'toggle' });
       }
     });
